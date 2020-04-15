@@ -8,10 +8,11 @@ cache:
     - "node_modules"
 
 install:
-  - npm install
-  - npm install -g firebase-tools
-  - git clone https://github.com/Shivansh2407/VITHack-Frontend ./
+  - ls
 
 script:
-  - npm run build
+  - git clone https://github.com/Shivansh2407/VITHack-Frontend repo
+  - npm install --prefix repo/
+  - npm run build --prefix repo/
+  - npm install -g git://github.com/firebase/firebase-tools#master
   - firebase deploy
