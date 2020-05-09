@@ -5,3 +5,5 @@
 This worker deploys the project via CI.
 
 [![Build Status](https://travis-ci.org/YashKumarVerma/VITHack2020.svg?branch=master)](https://travis-ci.org/YashKumarVerma/VITHack2020)
+
+[Deploy manually using this build](https://travis-ci.org/github/YashKumarVerma/VITHack2020/builds/684967524)
