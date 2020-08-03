@@ -1,18 +1,18 @@
 language: node_js
 
 node_js:
-  - "stable"
+  - 'stable'
 
 cache:
   directories:
-    - "node_modules"
+    - 'node_modules'
 
 install:
   - ls
 
 script:
   - git clone https://github.com/Shivansh2407/VITHack-Frontend repo
-  - npm install --prefix repo/
-  - npm run build --prefix repo/
+  - yarn install --cwd repo/
+  - yarn --cwd repo/ build
   - npm install -g git://github.com/firebase/firebase-tools#master
   - firebase deploy
