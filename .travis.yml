@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - 12
+  - 14
 
 cache:
   directories:
@@ -15,4 +15,4 @@ script:
   - yarn install --cwd repo/
   - yarn --cwd repo/ build
   - npm install -g git://github.com/firebase/firebase-tools#master
-  - firebase deploy
+  - firebase deploy --token "$FIREBASE_TOKEN"
